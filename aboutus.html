@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title> 3 level dropdown menu </title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main_navbar">
+        <a class="navbar-brand" href="/">NavMenu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Links
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/links/link1.html">Link 1</a></li>
+                        <li><a class="dropdown-item" href="/links/link2.html">Link 2</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li class="nav-item dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Link 3
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <li><a class="dropdown-item" href="/links/link3/link3-1.html">Link 3.1</a></li>
+                                    <li><a class="dropdown-item" href="/links/link3/link3-2.html">Link 3.2</a></li>
+                                    <li><a class="dropdown-item" href="/links/link3/link3-3.html">Link 3.3</a></li>
+                                </ul>
+                            </li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/aboutus.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container"><h1>About Us</h1></div>
+    </section>
+    <footer class="text-secondary">Created by <a class="text-secondary" href="http://ahsan-web.ml/">Ahsan</a> for Fazal Khan</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/main.js" ></script>
+    <script>
+        $(function () {
+            $('#main_navbar').bootnavbar();
+        })
+    </script>
+</body>
+
+</html>
